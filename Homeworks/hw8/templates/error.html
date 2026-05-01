@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block container %}
+<div id="errorPage">
+    <div class="errorIcon">😕</div>
+    <h2>Something went wrong</h2>
+    <p>We ran into a problem processing your request.</p>
+    <code>{{ error }}</code>
+    <a href="{{ url_for('home') }}" class="btnPrimary" style="margin-top:16px;">← Back to Home</a>
+</div>
+{% endblock %}
